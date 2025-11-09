@@ -43,24 +43,3 @@ npm run fe:dev
 npm run fe:build
 npm run fe:start
 ```
-
-## Deploy to Vercel
-
-### Option 1: Via Vercel CLI
-```bash
-npm i -g vercel
-vercel
-```
-
-### Option 2: Via GitHub Integration
-1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Import your repository
-4. Vercel will auto-detect Next.js in `FE/` folder
-5. Add environment variable:
-   - `NEXT_PUBLIC_API_BASE_URL` = your backend URL (e.g., `https://your-backend.vercel.app` or `https://your-backend.railway.app`)
-
-### Important Notes
-- **Backend must be deployed separately** (Vercel, Railway, Render, etc.)
-- Set `NEXT_PUBLIC_API_BASE_URL` in Vercel dashboard to point to your backend
-- The `vercel.json` config is already set up for the `FE/` folder
