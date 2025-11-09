@@ -40,5 +40,3 @@ function make(headers: Record<string, string> = {}): Client {
 }
 
 export const request: Client = make();
-
-

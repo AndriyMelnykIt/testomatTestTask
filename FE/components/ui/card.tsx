@@ -17,10 +17,6 @@ export function CardTitle({ className = '', children }: BaseProps) {
 	return <h3 className={`text-lg font-semibold ${className}`}>{children}</h3>;
 }
 
-export function CardDescription({ className = '', children }: BaseProps) {
-	return <p className={`text-sm text-muted-foreground ${className}`}>{children}</p>;
-}
-
 export function CardContent({ className = '', children }: BaseProps) {
 	return <div className={`p-4 ${className}`}>{children}</div>;
 }
