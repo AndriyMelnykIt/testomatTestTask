@@ -1,4 +1,4 @@
-const BASE = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3000';
+const BASE = process.env.NEXT_PUBLIC_API_BASE_URL || (typeof window !== 'undefined' ? '/api' : 'http://localhost:3000');
 const TIMEOUT_MS = 1000;
 
 type Call = (path: string, init?: RequestInit) => Promise<any>;
